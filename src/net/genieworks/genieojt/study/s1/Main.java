@@ -1,4 +1,4 @@
-package net.genieworks.genieojt;
+package net.genieworks.genieojt.study.s1;
 
 public class Main {
 
