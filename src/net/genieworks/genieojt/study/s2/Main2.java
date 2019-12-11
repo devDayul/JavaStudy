@@ -9,10 +9,17 @@ public class Main2 {
 
     public static void main(String[] args) {
 
-        int num = 12345;
+        int num = 123456;
         int sum = 0;
 
-        // TODO : 알맞는 코드를 넣으시오.
+        String numStr = Integer.toString(num);
+
+        for(int i =0; i < numStr.length(); i++ ) {
+//            int numAt = Integer.parseInt(numStr.charAt(i) + "");
+//            sum = sum + numAt;
+            sum = sum + (num % 10);
+            num = num / 10;
+        }
 
         System.out.println(String.format("sum = %d", sum));
     }

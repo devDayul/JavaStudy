@@ -9,13 +9,17 @@ package net.genieworks.genieojt.study.s2;
 public class Main3 {
 
     public static void main(String[] args) {
-        final int number = 12321;
+        java.util.Scanner s = new java.util.Scanner(System.in);
+
+        System.out.print("값을 입력하세요 : ");
+        final int number = s.nextInt();
 
         int tmp = number;
         int result = 0; // 변수 number를 거꾸로 변환해서 담을 변수
 
         while (tmp != 0) {
-            // TODO : 알맞는 코드를 넣으시오.
+            result = (result * 10) + (tmp % 10);
+            tmp = tmp / 10;
         }
 
         if (number == result) {
